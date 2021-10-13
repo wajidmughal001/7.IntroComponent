@@ -1,0 +1,87 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Desktop css */
+.container-fluid{
+  background-color:hsl(257, 40%, 49%);
+  background-image: url(/images/bg-desktop.svg);
+  height: auto;
+  color:white;
+
+}
+.logo{
+  margin-left: 50px;
+}
+.col>h1{
+  text-align: left;
+  font-family:Poppins;
+  font-weight:400;
+}
+.responsive {
+  width: 100%;
+  min-width: 425px;
+  height: auto;
+}
+.col>p{
+  margin-top: 50px;
+  text-align: left;
+}
+.col>button{
+  margin-top: 50px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid white;
+  color:hsl(257, 40%, 49%);
+}
+.col>button:hover{
+  margin-top: 50px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  color:white;
+}
+.social{
+  margin-top: 100px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+/* css for mobile */
+@media (max-width: 600px){
+  .container-fluid{
+    background-color:hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    height: auto;
+    color:white; 
+  }
+  .col>h1,p{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .col>button{
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid white;
+    color:hsl(257, 40%, 49%);
+    margin-left: 8rem;
+    margin-top: 30px;
+  }
+  .social{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
