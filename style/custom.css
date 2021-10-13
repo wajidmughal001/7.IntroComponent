@@ -1,87 +1,80 @@
-@import url('https://fonts.google.com/specimen/Poppins');
-@import url('https://fonts.google.com/specimen/Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-}
-/* Desktop css */
-.container-fluid{
-  background-color:hsl(257, 40%, 49%);
-  background-image: url(/images/bg-desktop.svg);
-  height: auto;
-  color:white;
+  box-sizing: border-box;
+  background: url(/images/bg-intro-desktop.png);
+
 
 }
-.logo{
-  margin-left: 50px;
+body{
+  font-family: 'Poppins', sans-serif;
+
+
 }
-.col>h1{
-  text-align: left;
-  font-family:Poppins;
-  font-weight:400;
-}
-.responsive {
-  width: 100%;
-  min-width: 425px;
-  height: auto;
-}
-.col>p{
-  margin-top: 50px;
-  text-align: left;
-}
-.col>button{
-  margin-top: 50px;
-  width: 200px;
-  height: 60px;
+.outer{
+  background-color: hsl(0, 100%, 74%);
+  opacity: 0.7;
+  color:white;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
-  border-radius: 50px;
+}
+.left{
+  padding: 10px;
+  flex: 50%;
+}
+.left>h1{
+  padding-top: 200px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.left>p{
+  text-align: left;
+  margin-left: 140px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.right{
+  padding: 10px;
+  flex: 50%;
+}
+.right>button{
+  background-color: hsl(248, 32%, 49%);
+  color:white;
+  border-radius: 10px;
+  border:1px solid hsl(248, 32%, 49%);
+  margin-top: 50px;
+}
+.right>form{
+  margin: auto;
+  margin-top: 20px;
+  width: 85%;
+  background-color: white;
   border: 1px solid white;
-  color:hsl(257, 40%, 49%);
+  border-radius: 10px;
+  margin-bottom: 60px;
 }
-.col>button:hover{
-  margin-top: 50px;
-  width: 200px;
-  height: 60px;
-  font-size: 30px;
-  text-align: center;
-  border-radius: 50px;
-  border: 1px solid hsl(300, 69%, 71%);
-  background-color: hsl(300, 69%, 71%);
-  color:white;
+.col-sm-10{
+  margin: auto;
+  margin-top: 30px;
 }
-.social{
-  margin-top: 100px;
-  text-align: right;
-  margin-bottom: 10px;
+.btn{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
-/* css for mobile */
-@media (max-width: 600px){
-  .container-fluid{
-    background-color:hsl(257, 40%, 49%);
-    background-image: url(/images/bg-desktop.svg);
-    height: auto;
-    color:white; 
+.text-muted{
+  font-size: 10px;
+}
+.right>p{
+  color:black;
+  font-size: 16px;
+  margin: 20px;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .right, .left {
+    flex: 100%;
   }
-  .col>h1,p{
-    text-align: center;
-    margin-top: 20px;
-  }
-  .col>button{
-    width: 200px;
-    height: 60px;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 50px;
-    border: 1px solid white;
-    color:hsl(257, 40%, 49%);
-    margin-left: 8rem;
-    margin-top: 30px;
-  }
-  .social{
-    margin-top: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
 }
